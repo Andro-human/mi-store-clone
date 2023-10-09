@@ -23,7 +23,17 @@ function App() {
 
       <NavBar />
 
-      <NavOptions />
+     <Routes>
+     <Route exact path="/miphones" element={<NavOptions elem={data.miPhones} />} />
+     <Route exact path="/redmiphones" element={<NavOptions elem={data.redmiPhones} />} />
+     <Route exact path="/tv" element={<NavOptions elem={data.tv} />} />
+     <Route exact path="/laptops" element={<NavOptions elem={data.laptop} />} />
+     <Route exact path="/lifestyle" element={<NavOptions elem={data.fitnessAndLifeStyle} />} />
+     <Route exact path="/home" element={<NavOptions elem={data.home} />} />
+     <Route exact path="/audio" element={<NavOptions elem={data.audio} />} />
+     <Route exact path="/accessories" element={<NavOptions elem={data.accessories} />} />
+
+     </Routes>
 
       <Slider start={data.banner.start}/>
 
